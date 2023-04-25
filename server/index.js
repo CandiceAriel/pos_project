@@ -17,7 +17,7 @@ app.get("/", (req,res)=>{
 });
 
 // Route to get all posts
-app.get("/api", (req,res)=>{
+app.get("/menu", (req,res)=>{
   db.query("SELECT * FROM menu", (err,result)=>{
     if(err) {
       console.log(err)
